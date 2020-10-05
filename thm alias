@@ -1,0 +1,1 @@
+alias thm='printf "\e]2;VPN\a" && sudo openvpn /home/yandi/THM/THM.ovpn'
