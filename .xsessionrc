@@ -1,0 +1,3 @@
+# Sets hold right click scroll (check xinput list for device id).
+xinput set-prop 12 "libinput Scroll Method Enabled" 0, 0, 1
+xinput set-prop 12 "libinput Button Scrolling Button" 3
