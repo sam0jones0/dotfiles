@@ -3,4 +3,5 @@ xinput set-prop 12 "libinput Scroll Method Enabled" 0, 0, 1
 xinput set-prop 12 "libinput Button Scrolling Button" 3
 
 # Screen enter powersaving mode in seconds idle (standby, suspend, off)
-xset dpms 300 400 600
+# Startup application with following line:
+# /bin/bash -c "sleep 15 && xset dpms 300 400 600"
