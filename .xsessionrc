@@ -1,6 +1,9 @@
-# Sets hold right click scroll (check xinput list for device id).
-xinput set-prop 12 "libinput Scroll Method Enabled" 0, 0, 1
-xinput set-prop 12 "libinput Button Scrolling Button" 3
+# Sets hold right click scroll for mouse (should work across device id updates).
+dev_num=$(/usr/bin/xinput --list | grep -oP 'Corsair CORSAIR HARPOON RGB PRO Gaming Mouse\s+id=\K\d+')
+xinput set-prop $dev_num "libinput Scroll Method Enabled" 0, 0, 1
+xinput set-prop $dev_num "libinput Button Scrolling Button" 3
+xset dpms 300 400 600
+
 
 # Screen enter powersaving mode in seconds idle (standby, suspend, off)
 # Startup application with following line:
